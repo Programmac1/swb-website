@@ -61,8 +61,8 @@
 }
 
 .wrapper{
-   /*height:100vh;*/ /*this was causing the javascript scroll code not to work as the content height exceeded the viewport height- but then the video did not fit in the window (vertical)*/ 
-   min-height:100vh; /*added this to fix video fitting vertical issue*/
+   height:100vh; /*this was causing the javascript scroll code not to work as the content height exceeded the viewport height- but then the video did not fit in the window (vertical)*/ 
+   /*min-height:100vh; added this to fix video fitting vertical issue*/
    background-color: white;
    overflow-y:auto;
    overflow-x: hidden;
@@ -95,9 +95,9 @@
     height:auto; /*added this to fix video fitting vertical issue*/
 }
 
-.force-redraw {
+/*.force-redraw {
     transform: translateZ(0);
-}
+}*/
 
 .video-banner::-webkit-media-controls {
     display: none !important;
