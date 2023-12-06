@@ -17,12 +17,12 @@
     list-style: none;
     display:flex;
     background-color: rgba(88, 71, 26, 0.1);
-    transition: background-color 0.5s ease-in-out;
+    transition: top 0.3s;
 }
 
-.navbar.scrolled{
+/*.navbar.scrolled{
     background-color: rgb(178, 175, 173, 0.97)
-}
+}*/
 
 
 
@@ -62,7 +62,8 @@
 
 .wrapper{
    height:100vh; /*this was causing the javascript scroll code not to work as the content height exceeded the viewport height- but then the video did not fit in the window (vertical)*/ 
-   /*min-height:100vh; added this to fix video fitting vertical issue*/
+  
+   /*min-height:100vh; added this to fix video fitting vertical issue iaffecting the scrollbar js code*/
    background-color: white;
    overflow-y:auto;
    overflow-x: hidden;
@@ -84,19 +85,19 @@
 
 .insert-video{
     padding-bottom:150px;
-    color:white;
+    color:black;
 }
 .video-banner{
     outline: none;
     z-index: -1;
     transform: translateZ(-10px) scale(2);
     position: absolute;
-    width:100vw; */This one line of code code solved the video fitting the viewport issue!*/
+    width:100vw; /*This one line of code code solved the video fitting the viewport issue!*/
     height:auto; /*added this to fix video fitting vertical issue*/
 }
 
 /*.force-redraw {
-    transform: translateZ(0);
+    transform: translateZ(0); //this was added after scrollbar code was added (which broke parallax)//
 }*/
 
 .video-banner::-webkit-media-controls {
@@ -115,7 +116,7 @@
     text-align: center;
     font-weight:bold;
     font-size:45px;
-    color:white;
+    color:black;
   
     position:absolute;
     
@@ -124,7 +125,7 @@
 /* //    Our mission is to take your business to the next level by providing personalized social media strategies and planning/ */
 
 .mission-container{
-    background-color: rgba(207, 203, 200, 0.97);
+    background-color: #afb1b1;
 }
 
 .mission-text{
@@ -137,13 +138,26 @@
 }
 
 .wrap{
+  position:relative;
+}
+
+.overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: white;
+    opacity:0.7;
+    z-index: 2;
+}
+
+
+.background-image{
     background-image: url('laptop-image.png');
     background-position: center;
     background-size: cover;
-    height:100vh;
-    background-color:rgb(145, 139, 134, 0.8); ;
+    width:100%;
+    height:100%;
 }
-
 
 
 .my-services{
@@ -152,7 +166,8 @@
     font-weight:bold;
     font-size:30px;
     color:black;
-
+    z-index:3;
+    position:relative;
 }
 
 .services-grid{
@@ -162,12 +177,15 @@
     color:black;;
     padding:30px 40px;
     column-gap: 20px;
+    z-index:4;
+    position:relative;
 }
 
 .service-container{
     display:flex;
-    background-color: rgba(207, 203, 200, 0.88);
+    background-color: #F6F4F1;
     border-radius: 15px;
+    padding:5px;
 }
 
 .service-image-container{
@@ -211,11 +229,11 @@
     padding: 60px 240px;;
     font-size:20px;
     color:black;
-    
+    background-color: #afb1b1;
 }
 
 .testimonial{
-    background-color: rgba(207, 203, 200, 0.88);
+    background-color: #F6F4F1;
     padding:20px;
     border-radius: 15px;
     font-size:25px;
