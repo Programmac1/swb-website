@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Hammersmith+One&family=Literata:opsz,wght@7..72,300&family=Righteous&family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    font-family: 'Literata', serif;;
+}
+
+
+.navbar-wrap{
+    width:100%;
+    position:fixed;
+    height:70px;
+    z-index: 100;
+}
+
+.navbar{
+    list-style: none;
+    display:flex;
+    background-color: rgba(88, 71, 26, 0.1);
+    transition: top 0.3s;
+}
+
+/*.navbar.scrolled{
+    background-color: rgb(178, 175, 173, 0.97)
+}*/
+
+
+
+.space-between{
+    width:900px;
+}
+
+.logo-container{
+    padding-top:20px;
+    text-align:center
+} /*REMOVE*/
+
+.logo{
+    width:80px;
+    padding-top: 10px;;
+}
+
+.menu-link{
+    padding:20px;
+}
+
+.menu-link:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.insta-logo{
+    align-items: center;
+    padding:20px;
+}
+
+
+.fa-brands:hover{
+    color: white;
+    cursor: pointer;
+}
+
