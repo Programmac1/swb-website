@@ -13,7 +13,7 @@
 
         <nav class="navbar-wrap">
             <ul class="navbar">
-                <a class="logo-container"><p>[INSERT LOGO]</p></a>
+                <a class="logo-container"><img class="logo" src="images/sb-logo-two.png"></a>
                 <div class="space-between"></div>
                 <li class="menu-link">Home</li>
                 <li class="menu-link">Services</li>
@@ -24,9 +24,8 @@
         </nav>
 
         <div class="banner">
-            <p class="insert-video">[INSERT PREFERRED VIDEO]</p>
             <video class="video-banner" width="100%" height="auto" controls autoplay muted loop>
-                <source src="videos/pear-placeholder-video.mp4" type="video/mp4">
+                <source src="videos/woman-on-phone.mp4" type="video/mp4">
             </video>
             
             <div class="title-div">Social With Beth</div>
@@ -46,7 +45,7 @@
                 <div class="services-grid">
 
                             <div class="service-container">
-                                <div class="service-image-container"><img class="audit-image" src="images/insta-audit-placeholder.jpg">
+                                <div class="service-image-container"><img class="audit-image" src="images/insta-analytics.jpg">
                                 </div>
                                 <div class="service-text">
                                     <div class="service-title"><h1 class="service-header">Instagram Audits</h1></div>
@@ -55,7 +54,7 @@
                             </div>
 
                             <div class="service-container">
-                                <div class="service-image-container"><img class="audit-image" src="images/soc-media-management.jpg">
+                                <div class="service-image-container"><img class="audit-image" src="images/social-platforms.webp">
                                 </div>
                                 <div class="service-text">
                                     <div class="service-title"><h1>Social Media Management</h1></div>
@@ -64,7 +63,7 @@
                             </div>
 
                             <div class="service-container">
-                                <div class="service-image-container"><img class="audit-image" src="images/soc-media-shoot.jpg">
+                                <div class="service-image-container"><img class="audit-image" src="images/soc-content.jpg">
                                 </div>
                                 <div class="service-text">
                                     <div class="service-title"><h1>Content Creation Days</h1></div>
@@ -83,33 +82,45 @@
                 <p class="testimonial">"[INSERT CLIENT TESTIMONIAL HERE] Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ad sequi quidem nihil placeat doloribus tenetur? Accusantium aperiam, earum sit non recusandae consectetur? Tenetur fugiat odio distinctio quam nemo amet.</p>            
             </div>
 
-            <div class="trust-us">
-                <p class="testimonial">"[INSERT CLIENT TESTIMONIAL HERE] Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ad sequi quidem nihil placeat doloribus tenetur? Accusantium aperiam, earum sit non recusandae consectetur? Tenetur fugiat odio distinctio quam nemo amet.</p>            
+            <div class="contact-form-container">
+
+                <h1 class="contact-us-header">Contact Me</h1>
+                <form class="contact-form" action="submit_form.php" method="post">
+                    <label for="name">Company*</label>
+                    <input type="text" class="company" name="name" required>
+
+                    <label for="name">Your Full Name*</label>
+                    <input type="text" class="full-name" name="name" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" class="email" name="email" required>
+
+                    <label class="which-services">Which service(s) are you interested in?</label>
+
+                    <div class="checkbox-container">
+                        <label class="checkbox" for="option1">
+                            <input type="checkbox" class="option1" name="preferences" value="option1">
+                            Instagram Audit
+                        </label>
+                        <label class="checkbox" for="option2">
+                            <input type="checkbox" class="option2" name="preferences" value="option2">
+                            Social Media Management
+                        </label>
+                        <label class="checkbox" for="option3">
+                            <input type="checkbox" class="option3" name="preferences" value="option3">
+                            Content Creation Days
+                        </label>
+                    </div>
+                 
+
+                    <label for="Message">Tell me your goals for your business and what I can do for you*</label>
+                    <textarea name="message" class="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+
+                </form>
             </div>
 
-            <div class="trust-us">
-                <p class="testimonial">"[INSERT CLIENT TESTIMONIAL HERE] Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ad sequi quidem nihil placeat doloribus tenetur? Accusantium aperiam, earum sit non recusandae consectetur? Tenetur fugiat odio distinctio quam nemo amet.</p>            
-            </div>
-
-            <div class="trust-us">
-                <p class="testimonial">"[INSERT CLIENT TESTIMONIAL HERE] Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ad sequi quidem nihil placeat doloribus tenetur? Accusantium aperiam, earum sit non recusandae consectetur? Tenetur fugiat odio distinctio quam nemo amet.</p>            
-            </div>
-
-            <div class="trust-us">
-                <p class="testimonial">"[INSERT CLIENT TESTIMONIAL HERE] Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ad sequi quidem nihil placeat doloribus tenetur? Accusantium aperiam, earum sit non recusandae consectetur? Tenetur fugiat odio distinctio quam nemo amet.</p>            
-            </div>
-
-            <div class="trust-us">
-                <p class="testimonial">"[INSERT CLIENT TESTIMONIAL HERE] Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ad sequi quidem nihil placeat doloribus tenetur? Accusantium aperiam, earum sit non recusandae consectetur? Tenetur fugiat odio distinctio quam nemo amet.</p>            
-            </div>
-
-            <div class="trust-us">
-                <p class="testimonial">"[INSERT CLIENT TESTIMONIAL HERE] Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ad sequi quidem nihil placeat doloribus tenetur? Accusantium aperiam, earum sit non recusandae consectetur? Tenetur fugiat odio distinctio quam nemo amet.</p>            
-            </div>
-
-            <div class="trust-us">
-                <p class="testimonial">"[INSERT CLIENT TESTIMONIAL HERE] Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ad sequi quidem nihil placeat doloribus tenetur? Accusantium aperiam, earum sit non recusandae consectetur? Tenetur fugiat odio distinctio quam nemo amet.</p>            
-            </div>
     </div>
         
 <script src="scripts/swb-home.js"></script>

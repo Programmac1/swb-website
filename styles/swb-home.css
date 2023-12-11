@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Hammersmith+One&family=Literata:opsz,wght@7..72,300&family=Righteous&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
 
 *{
     margin:0;
-    font-family: 'Literata', serif;;
+    /*font-family: 'Literata', serif;;*/
+    font-family: 'Kumbh Sans', sans-serif;
+
 }
 
 
@@ -16,7 +19,7 @@
 .navbar{
     list-style: none;
     display:flex;
-    background-color: rgba(88, 71, 26, 0.1);
+    background-color: rgba(138, 137, 135, 0.1);
     transition: top 0.3s;
 }
 
@@ -32,31 +35,36 @@
 
 .logo-container{
     padding-top:20px;
-    text-align:center
+    text-align:center;
+    color:white;
 } /*REMOVE*/
 
 .logo{
-    width:80px;
-    padding-top: 10px;;
+    width:35px;
+    height:35px;
+    margin-bottom:17px;
 }
 
 .menu-link{
-    padding:20px;
+    padding:25px;
+    color:white;
+    font-weight: 500;
 }
 
 .menu-link:hover{
-    color: white;
+    color: rgb(218, 213, 213);
     cursor: pointer;
 }
 
 .insta-logo{
     align-items: center;
     padding:20px;
+    color: white;
 }
 
 
 .fa-brands:hover{
-    color: white;
+    color: rgb(218, 213, 213);
     cursor: pointer;
 }
 
@@ -64,7 +72,7 @@
    height:100vh; /*this was causing the javascript scroll code not to work as the content height exceeded the viewport height- but then the video did not fit in the window (vertical)*/ 
   
    /*min-height:100vh; added this to fix video fitting vertical issue iaffecting the scrollbar js code*/
-   background-color: white;
+   background-color: rgb(218, 213, 213);
    overflow-y:auto;
    overflow-x: hidden;
 
@@ -85,7 +93,7 @@
 
 .insert-video{
     padding-bottom:150px;
-    color:black;
+    color:#161540;
 }
 .video-banner{
     outline: none;
@@ -114,10 +122,10 @@
 
 .title-div{
     text-align: center;
-    font-weight:bold;
+    font-weight:500;
     font-size:45px;
-    color:black;
-  
+    color:white;
+   /* -webkit-text-stroke: 0.1px white;*/
     position:absolute;
     
 }
@@ -125,15 +133,15 @@
 /* //    Our mission is to take your business to the next level by providing personalized social media strategies and planning/ */
 
 .mission-container{
-    background-color: #afb1b1;
+    background-color: #161540;
 }
 
 .mission-text{
     padding: 40px 200px;;
     text-align: center;
-    font-weight:bold;
+    font-weight:500;
     font-size:30px;
-    color:black;
+    color:white;
 
 }
 
@@ -152,7 +160,7 @@
 
 
 .background-image{
-    background-image: url('laptop-image.png');
+    background-image: url('services-photo.png');
     background-position: center;
     background-size: cover;
     width:100%;
@@ -165,7 +173,7 @@
     text-align: center;
     font-weight:bold;
     font-size:30px;
-    color:black;
+    color:#161540;
     z-index:3;
     position:relative;
 }
@@ -174,7 +182,7 @@
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
    /* background-color: rgb(165, 159, 159);*/
-    color:black;;
+    color:white;;
     padding:30px 40px;
     column-gap: 20px;
     z-index:4;
@@ -183,15 +191,15 @@
 
 .service-container{
     display:flex;
-    background-color: #F6F4F1;
+    background-color:#161540;
     border-radius: 15px;
-    padding:5px;
+    padding:10px;
 }
 
 .service-image-container{
     display:inline-block;
     width:50%;
-    padding:10px;
+    padding:20px 8px;
 }
 
 .audit-image{
@@ -228,13 +236,81 @@
     text-align: center;
     padding: 60px 240px;;
     font-size:20px;
-    color:black;
-    background-color: #afb1b1;
+    color:white;
+    background-color: #161540;
 }
 
 .testimonial{
-    background-color: #F6F4F1;
+    background-color: #161540;
     padding:20px;
     border-radius: 15px;
     font-size:25px;
+}
+
+.contact-form-container{
+    /*max-width: 600px;*/
+    margin:0 auto;
+    padding:20px;
+    text-align: center;
+    color:#161540;
+    background-color: rgb(218, 213, 213);
+}
+
+.contact-us-header{
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+form{
+    display:grid;
+    grid-gap: 10px;
+    width:100%;
+    justify-content: center;
+}
+
+label{
+    text-align:center;
+    font-weight: bold;
+    color:#161540;
+    font-size:20px;
+    margin-top:20px;
+}
+
+textarea{
+    min-height:150px;
+    background-color:#161540;
+    color:white;
+    max-width: 600px;
+}
+
+.company, .full-name, .email{
+    background-color: #161540;
+    color:white;
+    max-width: 600px;
+}
+
+button{
+    font-size:20px;
+    font-weight:bold;
+    color:#161540;
+    background-color: white;
+    margin-top:20px;
+    max-width: 600px;
+}
+
+.which-services{
+    margin-top:20px;
+}
+
+.checkbox{
+    font-size:18px;
+    margin-bottom: 20px;
+}
+
+.checkbox-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
 }
