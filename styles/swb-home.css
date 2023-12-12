@@ -30,7 +30,7 @@
 
 
 .space-between{
-    width:900px;
+    width:970px;
 }
 
 .logo-container{
@@ -46,7 +46,8 @@
 }
 
 .menu-link{
-    padding:25px;
+    padding-right:40px;
+    padding-top:25px;
     color:white;
     font-weight: 500;
 }
@@ -58,8 +59,10 @@
 
 .insta-logo{
     align-items: center;
-    padding:20px;
     color: white;
+   
+    padding-top:25px;
+
 }
 
 

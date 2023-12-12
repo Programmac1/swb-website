@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Hammersmith+One&family=Literata:opsz,wght@7..72,300&family=Righteous&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+
+*{
+    margin:0;
+    /*font-family: 'Literata', serif;;*/
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+
+.navbar-wrap{
+    width:100%;
+    position:fixed;
+    height:70px;
+    z-index: 100;
+}
+
+.navbar{
+    list-style: none;
+    display:flex;
+    background-color: rgba(138, 137, 135, 0.1);
+    transition: top 0.3s;
+}
+
+/*.navbar.scrolled{
+    background-color: rgb(178, 175, 173, 0.97)
+}*/
+
+
+
+.space-between{
+    width:970px;
+}
+
+.logo-container{
+    padding-top:20px;
+    text-align:center;
+    color:white;
+} /*REMOVE*/
+
+.logo{
+    width:35px;
+    height:35px;
+    margin-bottom:17px;
+}
+
+.menu-link{
+    padding-right:40px;
+    padding-top:25px;
+    color:white;
+    font-weight: 500;
+}
+
+.menu-link:hover{
+    color: rgb(218, 213, 213);
+    cursor: pointer;
+}
+
+.insta-logo{
+    align-items: center;
+    color: white;
+   
+    padding-top:25px;
+
+}
+
+
+.fa-brands:hover{
+    color: rgb(218, 213, 213);
+    cursor: pointer;
+}
+
+.wrapper{
+   height:100vh; /*this was causing the javascript scroll code not to work as the content height exceeded the viewport height- but then the video did not fit in the window (vertical)*/ 
+  
+   /*min-height:100vh; added this to fix video fitting vertical issue iaffecting the scrollbar js code*/
+   background-color: rgb(73, 85, 167);
+
+}
+
+.thankyou-div{
+    font-size:40px;
+    font-weight:bold;
+    color:#fff;
+    display:block;
+    text-align: center;
+    padding:300px;
+}
