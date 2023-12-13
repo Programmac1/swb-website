@@ -250,18 +250,14 @@
     font-size:25px;
 }
 
+
 .contact-form-container{
     /*max-width: 600px;*/
     margin:0 auto;
     padding:20px;
     text-align: center;
-    color:#161540;
+    color:white;
     background-color: rgb(218, 213, 213);
-}
-
-.contact-us-header{
-    margin-bottom:20px;
-    font-size:30px;
 }
 
 form{
@@ -286,8 +282,12 @@ textarea{
     max-width: 600px;
 }
 
+placeholder{
+    color:white;
+}
+
 .company, .full-name, .email{
-    background-color: #161540;
+    background-color: #6D3918;
     color:white;
     max-width: 600px;
 }
