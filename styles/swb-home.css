@@ -20,7 +20,7 @@
     list-style: none;
     display:flex;
     background-color: rgba(138, 137, 135, 0.1);
-    transition: top 0.3s;
+    transition: top 1s;
 }
 
 /*.navbar.scrolled{
