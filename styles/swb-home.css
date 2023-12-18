@@ -45,11 +45,16 @@
     margin-bottom:17px;
 }
 
+.menu-link-wrap{
+    display:flex;
+}
+
 .menu-link{
     padding-right:40px;
     padding-top:25px;
     color:white;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .menu-link:hover{
@@ -126,7 +131,7 @@
 .title-div{
     text-align: center;
     font-weight:500;
-    font-size:45px;
+    font-size:60px;
     color:white;
    /* -webkit-text-stroke: 0.1px white;*/
     position:absolute;
@@ -299,6 +304,7 @@ button{
     background-color: white;
     margin-top:20px;
     max-width: 600px;
+    padding-left:32px;
 }
 
 .which-services{
@@ -316,4 +322,29 @@ button{
     align-items: center;
     justify-content: center;
     margin-top:20px;
+}
+
+.social-media-block{
+    bottom:0;
+    width:100%;
+}
+
+.social-media-wrap{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    background-color:#161540;
+}
+
+.socials{
+    color:white;
+    align-items:center;
+    text-decoration:none;
+    padding:25px;
+}
+
+.fa-brands:hover{
+    color: rgb(218, 213, 213);
 }
