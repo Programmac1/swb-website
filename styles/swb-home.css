@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Hammersmith+One&family=Literata:opsz,wght@7..72,300&family=Righteous&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
 
+
+
 *{
     margin:0;
     /*font-family: 'Literata', serif;;*/
     font-family: 'Kumbh Sans', sans-serif;
-
 }
 
 
@@ -89,7 +90,7 @@
 
 .banner{
     width:100%;
-    /*height: 100%;*/
+   
     min-height: 100vh; /*added this to fix video fitting vertical issue*/
     transform-style: preserve-3d;
     z-index: -1;
@@ -106,7 +107,8 @@
 .video-banner{
     outline: none;
     z-index: -1;
-    transform: translateZ(-10px) scale(2);
+    /*transform: translateZ(-10px) scale(2);*/
+    transform: translate3d(0, 0, -10px) scale(2);
     position: absolute;
     width:100vw; /*This one line of code code solved the video fitting the viewport issue!*/
     height:auto; /*added this to fix video fitting vertical issue*/
