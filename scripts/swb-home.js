@@ -1,6 +1,14 @@
 
 
+const menu_button = document.querySelector('.hamburger');
+const mobile_menu = document.querySelector('.mobile-nav');
+const navbar = document.querySelector('.navbar');
 
+menu_button.addEventListener('click', function (){
+    menu_button.classList.toggle('is-active');
+    mobile_menu.classList.toggle('is-active');
+    navbar.classList.toggle('mobile');
+});
 /*document.addEventListener('scroll', function () {
     console.log('scroll event fired')
     const scrollPosition = window.scrollY;
@@ -15,29 +23,19 @@
 
 console.log('Document body height:', document.body.clientHeight);
 
-/*const videoBanner = document.querySelector('.video-banner');
-videoBanner.classList.toggle('force-redraw'); /*added this to fix video fitting vertical issue- did a browser redraw to fix rendering issue with blank space above video-banner after scrollbar code was added*/
 
-//the above code regarding the scrollbar breaks the parallax effect// its because parallax messes with the scrolling height dimensions which need to be defined and used to make the scrollbar change class depending on the scrollY property
 
-/*document.addEventListener("DOMContentLoaded", function () {
-    let prevScrollPosition = window.pageYOffset;
-    const navbar = document.querySelector('.navbar-wrap');
+document.addEventListener("DOMContentLoaded", function () {
+    var banner = document.querySelector(".banner");
+    var videoBanner = document.querySelector(".video-banner");
 
-window.onscroll = function () {
-    const currentScrollPosition = window.pageYOffset;
-    if(prevScrollPosition > currentScrollPosition){
-        navbar.style.top = "0";
-    }else{
-        navbar.style.top = "-50px";
+    function updateParallax() {
+        var scrollPosition = window.scrollY;
+        videoBanner.style.transform = "translate3d(0, " + scrollPosition * 0.5 + "px, 0)";
     }
-    prevScrollPosition = currentScrollPosition;
-}
-});*/
 
-window.onload = function() {
-    var videoBanner = document.querySelector('.video-banner');
-    videoBanner.style.transform = 'translateZ(0)';
-};
+    window.addEventListener("scroll", updateParallax);
+    window.addEventListener("resize", updateParallax);
 
-//this function fixed the initial fullscreen video-banner issue//
+    updateParallax(); // Initial call to set parallax effect on page load
+});

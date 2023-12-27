@@ -12,8 +12,8 @@
 
 .navbar-wrap{
     width:100%;
-    position:fixed;
-    height:70px;
+    position:absolute;
+    /*height:70px;*/
     z-index: 100;
 }
 
@@ -22,6 +22,14 @@
     display:flex;
     background-color: rgba(138, 137, 135, 0.1);
     transition: top 1s;
+}
+
+.navbar.mobile{
+    list-style-type:none;
+    background-color: #EFEBE0;
+    display:flex;
+    height:70px;
+    background-color: #1c3749;
 }
 
 /*.navbar.scrolled{
@@ -77,46 +85,129 @@
     cursor: pointer;
 }
 
-.wrapper{
-   height:100vh; /*this was causing the javascript scroll code not to work as the content height exceeded the viewport height- but then the video did not fit in the window (vertical)*/ 
-  
-   /*min-height:100vh; added this to fix video fitting vertical issue iaffecting the scrollbar js code*/
-   background-color: rgb(218, 213, 213);
-   overflow-y:auto;
-   overflow-x: hidden;
-
-   perspective: 10px;
+.hamburger{
+    padding-top:15px;
+    position:relative;
+    display:block;
+    width:30px;
+    cursor:pointer;
+    height:35px;
+    appearance:none;
+    background: none;
+    outline:none;
+    border:none;
 }
 
-.banner{
+/*.hamburger .bar, .hamburger:before, .hamburger:after{
+    content:'';
+    display:block;
     width:100%;
-   
-    min-height: 100vh; /*added this to fix video fitting vertical issue*/
-    transform-style: preserve-3d;
-    z-index: -1;
-    display: flex;
+    height:5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition:0.4s;
+}*/
+
+.hamburger .bar,
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 5.5px 0px;
+    transition: 0.4s;
+    position: absolute;
+}
+
+.hamburger:before {
+    top: -0px; /* Adjust this value as needed */
+}
+
+.hamburger:after {
+    top: 12px; /* Adjust this value as needed */
+}
+
+.hamburger.is-active:before{
+    transform:rotate(-45deg) translate(-4px, 5px);
+}
+
+.hamburger.is-active:after{
+    transform:rotate(45deg) translate(-3px, -5px);
+}
+
+.hamburger.is-active .bar{
+    opacity:0;
+}
+
+.mobile-nav{
+    display:block;
+    position:fixed;
+    top:0;
+    left:100%;
+    width:100%;
+    min-height:100vh;
+    z-index:98;
+    background-color: /*#38B6FF;*/ white;
+    padding-top:120px;
+    opacity:97%;
+}
+
+.mobile-nav.is-active{
+    left:0;
+    transition:0.4s;
+}
+
+.mobile-nav a{
+    display:block;
+    width:100%;
+    max-width:200px;
+    margin: 0 auto 16px;
+    text-align:center;
+    margin-bottom:16px;
+    padding:12px;
+    background-color:#1c3749;;
+    text-decoration:none;
+    color:white;
+}
+
+.mobile-nav a:hover{
+    background-color: #ED6D1C;
+}
+
+.wrapper {
+    background-color: rgb(218, 213, 213);
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*perspective: 10px;*/
+ }
+
+.banner {
+    width: 100%;
+    height: 100vh; /* or adjust to your desired height */
+    overflow: hidden;
     position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
-}
+ }
 
 .insert-video{
     padding-bottom:150px;
     color:#161540;
 }
-.video-banner{
-    outline: none;
-    z-index: -1;
-    /*transform: translateZ(-10px) scale(2);*/
-    transform: translate3d(0, 0, -10px) scale(2);
+.video-banner {
     position: absolute;
-    width:100vw; /*This one line of code code solved the video fitting the viewport issue!*/
-    height:auto; /*added this to fix video fitting vertical issue*/
-}
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*z-index: -1;*/
+ }
 
-/*.force-redraw {
-    transform: translateZ(0); //this was added after scrollbar code was added (which broke parallax)//
-}*/
+
 
 .video-banner::-webkit-media-controls {
     display: none !important;
@@ -131,7 +222,8 @@
 }
 
 .title-div{
-    text-align: center;
+    margin-top:400px;
+    margin-left:0;
     font-weight:500;
     font-size:60px;
     color:white;
@@ -143,7 +235,7 @@
 /* //    Our mission is to take your business to the next level by providing personalized social media strategies and planning/ */
 
 .mission-container{
-    background-color: #161540;
+    background-color: #1c3749;
 }
 
 .mission-text{
@@ -163,7 +255,7 @@
     position: absolute;
     width:100%;
     height:100%;
-    background-color: white;
+    background-color: #a6c9e1;
     opacity:0.7;
     z-index: 2;
 }
@@ -183,7 +275,7 @@
     text-align: center;
     font-weight:bold;
     font-size:30px;
-    color:#161540;
+    color:#1c3749;
     z-index:3;
     position:relative;
 }
@@ -201,7 +293,7 @@
 
 .service-container{
     display:flex;
-    background-color:#161540;
+    background-color:#1c3749;
     border-radius: 15px;
     padding:10px;
 }
@@ -247,11 +339,11 @@
     padding: 60px 240px;;
     font-size:20px;
     color:white;
-    background-color: #161540;
+    background-color: #1c3749;
 }
 
 .testimonial{
-    background-color: #161540;
+    background-color: #1c3749;
     padding:20px;
     border-radius: 15px;
     font-size:25px;
@@ -264,7 +356,8 @@
     padding:20px;
     text-align: center;
     color:white;
-    background-color: rgb(218, 213, 213);
+  
+    background-color: #b5cbda;
 }
 
 form{
@@ -277,16 +370,15 @@ form{
 label{
     text-align:center;
     font-weight: bold;
-    color:#161540;
-    font-size:20px;
+    color:white;
+    font-size:25px;
     margin-top:20px;
 }
 
 textarea{
     min-height:150px;
-    background-color:#161540;
+    background-color:#1c3749;
     color:white;
-    max-width: 600px;
 }
 
 placeholder{
@@ -305,7 +397,6 @@ button{
     color:#161540;
     background-color: white;
     margin-top:20px;
-    max-width: 600px;
     padding-left:32px;
 }
 
@@ -337,7 +428,7 @@ button{
     justify-content: center;
     margin:0;
     padding:0;
-    background-color:#161540;
+    background-color:#1c3749;
 }
 
 .socials{
@@ -349,4 +440,29 @@ button{
 
 .fa-brands:hover{
     color: rgb(218, 213, 213);
+}
+
+@media (min-width: 767px){
+    /*.mobile-nav{
+        display:none;
+    }*/
+    .hamburger{
+        display:none;
+    }
+    .mobile-nav{
+        display:none;
+    }
+}
+
+@media (max-width: 767px){
+
+    .menu-link-wrap{
+        display:none;
+    }
+    .insta-logo{
+        display:none;
+    }
+    .space-between{
+        width:300px;
+    }
 }
