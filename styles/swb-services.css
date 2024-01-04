@@ -98,15 +98,7 @@
     border:none;
 }
 
-/*.hamburger .bar, .hamburger:before, .hamburger:after{
-    content:'';
-    display:block;
-    width:100%;
-    height:5px;
-    background-color: white;
-    margin: 6px 0px;
-    transition:0.4s;
-}*/
+
 
 .hamburger .bar,
 .hamburger:before,
