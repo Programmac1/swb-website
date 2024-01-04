@@ -363,11 +363,11 @@
     background-attachment: fixed;
     /*background-size:100% 100%;*/
     background-size: cover;
-    padding: 100px 0px;
+    
     position:relative;
     align-items: center;
     justify-content: center;
-    padding-top:220px;
+    padding-top:20px;
 }
 
 .arrow{
@@ -375,6 +375,7 @@
     align-items: center;
     display: flex;
     padding-top:30px;
+    color: white;
 }
 
 
@@ -382,14 +383,14 @@
     text-align: center;
     padding:20px;
     font-size: 50px;
-    color:#1c3749;
+    color:white;
 }
 
 .fill-it-in{
     text-align: center;
     font-size:30px;
     padding:20px;
-    color:#1c3749;
+    color:white;
 }
 
 .contact-form-container{
@@ -504,7 +505,7 @@ button{
         display:none;
     }
     .space-between{
-        width:230px;
+        width:180px;
     }
 
     .title-div{
@@ -557,18 +558,18 @@ button{
     }
 
     .background-image-1{
-        background-image: url(contact-me.jpeg);
+        background-image: url(White\ Desk\ Photo\ Clean\ Office\ Space\ Corporate\ Canva\ Banner.png);
         
         height:100vh;
         background-attachment: fixed;
-        /*background-size:100% 100%;*/
-        
-        display:flex;
         background-size: cover;
+        overflow: hidden;
+        display:flex;
+        
         position:relative;
         align-items: center;
         justify-content: center;
-        
+        box-sizing: border-box;
     }
 
     .contact-form-container label{
