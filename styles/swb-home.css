@@ -9,6 +9,9 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+.body{
+    overflow-x: hidden;
+}
 
 .navbar-wrap{
     width:100%;
