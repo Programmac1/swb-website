@@ -56,6 +56,7 @@
 
 .menu-link-wrap{
     display:flex;
+    
 }
 
 .menu-link{
@@ -242,7 +243,7 @@
     padding: 40px 200px;;
     text-align: center;
     font-weight:500;
-    font-size:30px;
+    font-size:2rem;
     color:white;
 
 }
@@ -255,7 +256,7 @@
     position: absolute;
     width:100%;
     height:100%;
-    background-color: #a6c9e1;
+    background-color: #ccd5db;
     opacity:0.7;
     z-index: 2;
 }
@@ -274,8 +275,8 @@
     padding: 40px 200px;;
     text-align: center;
     font-weight:bold;
-    font-size:30px;
-    color:#1c3749;
+    font-size:2rem;
+    color:white;
     z-index:3;
     position:relative;
 }
@@ -301,7 +302,7 @@
 .service-image-container{
     display:inline-block;
     width:50%;
-    padding:20px 8px;
+    padding:30px 8px;
 }
 
 .audit-image{
@@ -350,6 +351,42 @@
 }
 
 
+.background-image-1{
+    background-image: url(contact-me.jpeg);
+    width:100%;
+    height:400px;
+    background-attachment: fixed;
+    /*background-size:100% 100%;*/
+    background-size: cover;
+    padding: 100px 0px;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    padding-top:220px;
+}
+
+.arrow{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top:30px;
+}
+
+
+.service1-header{
+    text-align: center;
+    padding:20px;
+    font-size: 50px;
+    color:#1c3749;
+}
+
+.fill-it-in{
+    text-align: center;
+    font-size:30px;
+    padding:20px;
+    color:#1c3749;
+}
+
 .contact-form-container{
     /*max-width: 600px;*/
     margin:0 auto;
@@ -358,6 +395,7 @@
     color:white;
   
     background-color: #b5cbda;
+
 }
 
 form{
@@ -370,7 +408,7 @@ form{
 label{
     text-align:center;
     font-weight: bold;
-    color:white;
+    color:#1c3749;
     font-size:25px;
     margin-top:20px;
 }
@@ -381,9 +419,7 @@ textarea{
     color:white;
 }
 
-placeholder{
-    color:white;
-}
+
 
 .company, .full-name, .email{
     background-color: #6D3918;
@@ -465,4 +501,58 @@ button{
     .space-between{
         width:300px;
     }
-}
+
+    .title-div{
+        font-size: 3rem;
+        margin: 0;
+    }
+    .mission-text{
+        padding: 40px 50px;;
+        text-align: center;
+        font-weight:500;
+        font-size:1.2rem;
+        color:white;
+    }
+
+    .services-grid{
+        gap:22px;
+    }
+    
+    .service-container{
+        display:flex;
+        background-color:#1c3749;
+        border-radius: 15px;
+        padding:10px;
+    }
+
+    .service-image-container{
+        display:none;
+    }
+
+    .service-title{
+        font-size:0.5rem;
+    }
+
+    .service-text{
+        text-align: center;
+        width: 100%;
+    }
+
+    .trust-us{
+        width:100%;
+        align-items: center;
+        align-items: center;
+        display: flex;
+        padding:7px;
+    }
+
+    .testimonial{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .contact-form-container label{
+        font-size:1.2rem;
+    }
+};
+

@@ -5,14 +5,13 @@
     margin:0;
     /*font-family: 'Literata', serif;;*/
     font-family: 'Kumbh Sans', sans-serif;
-
 }
 
 
 .navbar-wrap{
     width:100%;
-    position:fixed;
-    height:70px;
+    position:absolute;
+    /*height:70px;*/
     z-index: 100;
 }
 
@@ -21,6 +20,14 @@
     display:flex;
     background-color: rgba(138, 137, 135, 0.1);
     transition: top 1s;
+}
+
+.navbar.mobile{
+    list-style-type:none;
+    background-color: #EFEBE0;
+    display:flex;
+    height:70px;
+    background-color: #1c3749;
 }
 
 /*.navbar.scrolled{
@@ -76,6 +83,100 @@
     cursor: pointer;
 }
 
+.hamburger{
+    margin-top: 17px;;
+    margin-left:50px;
+    padding-top:15px;
+    position:relative;
+    display:block;
+    width:30px;
+    cursor:pointer;
+    height:35px;
+    appearance:none;
+    background: none;
+    outline:none;
+    border:none;
+}
+
+/*.hamburger .bar, .hamburger:before, .hamburger:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition:0.4s;
+}*/
+
+.hamburger .bar,
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 5.5px 0px;
+    transition: 0.4s;
+    position: absolute;
+}
+
+.hamburger:before {
+    top: -0px; /* Adjust this value as needed */
+}
+
+.hamburger:after {
+    top: 12px; /* Adjust this value as needed */
+}
+
+.hamburger.is-active:before{
+    transform:rotate(-45deg) translate(-4px, 5px);
+}
+
+.hamburger.is-active:after{
+    transform:rotate(45deg) translate(-3px, -5px);
+}
+
+.hamburger.is-active .bar{
+    opacity:0;
+}
+
+.mobile-nav{
+    display:block;
+    position:fixed;
+    top:0;
+    left:100%;
+    width:100%;
+    min-height:100vh;
+    z-index:98;
+    background-color: /*#38B6FF;*/ white;
+    padding-top:120px;
+    opacity:97%;
+}
+
+.mobile-nav.is-active{
+    left:0;
+    transition:0.4s;
+}
+
+.mobile-nav a{
+    display:block;
+    width:100%;
+    max-width:200px;
+    margin: 0 auto 16px;
+    text-align:center;
+    margin-bottom:16px;
+    padding:12px;
+    background-color:#1c3749;;
+    text-decoration:none;
+    color:white;
+}
+
+.mobile-nav a:hover{
+    background-color: #ED6D1C;
+}
+
+
 .wrapper{
    height:100vh; /*this was causing the javascript scroll code not to work as the content height exceeded the viewport height- but then the video did not fit in the window (vertical)*/ 
   
@@ -88,11 +189,12 @@
 }
 
 .background-image-1{
-    background-image: url(laptop-image.png);
+    background-image: url(White\ Desk\ Photo\ Clean\ Office\ Space\ Corporate\ Canva\ Banner.png);
     width:100%;
     height:400px;
     background-attachment: fixed;
-    background-size:100% 100%;
+    /*background-size:100% 100%;*/
+    background-size: cover;
     padding: 100px 0px;
     position:relative;
     
@@ -108,7 +210,7 @@
 
 .service1-header{
     color:white;
-    font-size: 60px;
+    font-size: 3rem;;
     font-weight:500;
 }
 
@@ -116,18 +218,21 @@
     display:flex;
     height:400px;
     font-weight:500;
+    font-size:1rem;
 }
 
-.service-image{
+/*.service-image{
     width:50%;
     background-image: url(White\ Desk\ Photo\ Clean\ Office\ Space\ Corporate\ Canva\ Banner.png);
     background-size: cover;
    
-}
+}*/
 
 .service-description{
-    width:50%;
-    color:#161540
+    width:100%;
+    color:#161540;
+    text-align: center;
+    padding:20px;
 }
 
 .background-image-2{
@@ -135,7 +240,8 @@
     width:100%;
     height:50%;
     background-attachment: fixed;
-    background-size:100% 100%;
+    /*background-size:100% 100%;*/
+    background-size: cover;
     padding: 100px 0px;
 }
 
@@ -144,7 +250,8 @@
     width:100%;
     height:400px;
     background-attachment: fixed;
-    background-size:100% 100%;
+    /*background-size:100% 100%;*/
+    background-size: cover;
     padding: 100px 0px;
 }
 
@@ -159,7 +266,7 @@
     justify-content: center;
     margin:0;
     padding:0;
-    background-color:#161540;
+    background-color:#1c3749;
 }
 
 .socials{
@@ -172,3 +279,81 @@
 .fa-brands:hover{
     color: rgb(218, 213, 213);
 }
+
+
+/*@media screen and (min-width: 767px) and (max-width: 1024px) {*/
+    
+        
+@media (min-width: 767px){
+    /*.mobile-nav{
+        display:none;
+    }*/
+    .hamburger{
+        display:none;
+    }
+    .mobile-nav{
+        display:none;
+    }
+}
+
+@media (max-width: 767px){
+
+    .menu-link-wrap{
+        display:none;
+    }
+    .insta-logo{
+        display:none;
+    }
+    .space-between{
+        width:300px;
+    }
+
+    .title-div{
+        font-size: 3rem;
+        margin: 0;
+    }
+    .mission-text{
+        padding: 40px 50px;;
+        text-align: center;
+        font-weight:500;
+        font-size:1.2rem;
+        color:white;
+    }
+
+    .services-grid{
+        gap:22px;
+    }
+
+    .service-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    
+    .service-image-container{
+        display:none;
+    }
+
+    .service-text{
+        text-align: center;
+        width: 100%;
+    }
+
+    .trust-us{
+        width:100%;
+        align-items: center;
+        align-items: center;
+        display: flex;
+        padding:7px;
+    }
+
+    .testimonial{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .contact-form-container label{
+        font-size:1.2rem;
+    }
+};
+
