@@ -45,6 +45,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
     video.addEventListener('loadedmetadata', function(){
         video.play();
-        video.removeAttribute('controls'); 
     })
+
+    video.setAttribute('controls', true);
+        setTimeout(function() {
+            video.removeAttribute('controls');
+        }, 5000);
 });
