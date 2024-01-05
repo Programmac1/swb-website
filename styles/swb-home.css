@@ -223,6 +223,18 @@
     object-fit: cover;
 }
 
+.mobile-video-banner::-webkit-media-controls {
+    display: none !important;
+}
+
+.mobile-video-banner::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.mobile-video-banner::-webkit-media-controls-panel {
+    display: none !important;
+}
+
 .video-banner::-webkit-media-controls {
     display: none !important;
 }
@@ -525,6 +537,7 @@ button{
         position:absolute;
         
     }
+
     .menu-link-wrap{
         display:none;
     }
