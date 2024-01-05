@@ -39,3 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateParallax(); // Initial call to set parallax effect on page load
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+    var video = document.querySelector('mobile-video-banner')
+
+    video.addEventListener('loadedmetadata', function(){
+        video.play();
+    })
+});
