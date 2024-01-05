@@ -595,16 +595,30 @@ button{
     }
 
     .background-image-1{
-        background-image: url(White\ Desk\ Photo\ Clean\ Office\ Space\ Corporate\ Canva\ Banner.png);
-        width:100%;
+        
+       display:none;
+        
+    }
+
+    .mobile-background{
         height:400px;
+        background-color: white;
         
-        
-        overflow: hidden;
-        display:flex;
-        background-size: cover;
-        
-        box-sizing: border-box;
+    }
+
+    .service1-header{
+        padding-top:110px;
+        font-size: 35px;;
+        color:#161540
+    }
+
+    .fill-it-in{
+        font-size: 20px;;
+        color:#161540;
+    }
+
+    .arrow{
+        color: #161540;
     }
 
     .contact-form-container label{
