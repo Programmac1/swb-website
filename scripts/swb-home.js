@@ -45,5 +45,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     video.addEventListener('loadedmetadata', function(){
         video.play();
+        video.removeAttribute('controls'); 
     })
 });
