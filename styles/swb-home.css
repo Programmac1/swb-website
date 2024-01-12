@@ -248,10 +248,10 @@
 }
 
 .title-div{
-    margin-top:400px;
+    margin-top:80px;
     margin-left:0;
     font-weight:500;
-    font-size:60px;
+    font-size:4rem;
     color:white;
    /* -webkit-text-stroke: 0.1px white;*/
     position:absolute;
@@ -299,8 +299,8 @@
 .my-services{
     padding: 40px 200px;;
     text-align: center;
-    font-weight:bold;
-    font-size:2rem;
+   
+    font-size:3rem;
     color:white;
     z-index:3;
     position:relative;
@@ -546,7 +546,7 @@ textarea{
         margin-top:100px;
         margin-left:0;
         font-weight:500;
-        font-size:30px;
+        font-size:40px;
         color:white;
        /* -webkit-text-stroke: 0.1px white;*/
         position:absolute;
@@ -576,7 +576,7 @@ textarea{
     }
 
     .my-services{
-        font-size: 30px;
+        font-size: 25px;
         padding:40px 10px;
     }
 
@@ -631,7 +631,7 @@ textarea{
     .mobile-background{
         height:400px;
         background-color: white;
-        
+        display:block;
     }
 
     .service1-header{
