@@ -40,15 +40,17 @@ document.addEventListener("DOMContentLoaded", function () {
     updateParallax(); // Initial call to set parallax effect on page load
 });
 
-document.addEventListener('DOMContentLoaded', function(){
-    var video = document.querySelector('mobile-video-banner')
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('.mobile-video-banner');
 
-    video.addEventListener('loadedmetadata', function(){
+    video.addEventListener('canplay', function() {
         video.play();
-    })
+    });
 
+    
     video.setAttribute('controls', true);
-        setTimeout(function() {
-            video.removeAttribute('controls');
-        }, 5000);
+    setTimeout(function() {
+        video.removeAttribute('controls');
+    }, 100);
 });
+
