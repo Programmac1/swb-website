@@ -536,6 +536,12 @@ textarea{
     .banner{
         display:none;
     }
+
+    .mobile-banner{
+        position:relative;
+        z-index:2;
+    }
+
     .mobile-title-div{
         margin-top:100px;
         margin-left:0;
