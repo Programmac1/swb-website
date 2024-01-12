@@ -415,6 +415,9 @@
 
 .contact-form-container{
     /*max-width: 600px;*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
     margin:0 auto;
     padding:20px;
     text-align: center;
@@ -632,6 +635,17 @@ button{
 
     .arrow{
         color: #161540;
+    }
+
+    .contact-form-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        padding:20px;
+        text-align: center;
+        color:white;
+        background-color: #b5cbda;
     }
 
     .contact-form-container label{
