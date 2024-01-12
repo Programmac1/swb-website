@@ -95,7 +95,7 @@
     padding-top:15px;
     position:relative;
     display:block;
-    width:30px;
+    width:40px;
     cursor:pointer;
     height:35px;
     appearance:none;
@@ -390,6 +390,10 @@
     padding-top:40px;
 }
 
+.mobile-background{
+    display:none;
+
+}
 .arrow{
     justify-content: center;
     align-items: center;
@@ -428,10 +432,17 @@
 }
 
 form{
-    display:grid;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
     grid-gap: 10px;
     width:100%;
-    justify-content: center;
+    
+}
+
+.text-input{
+    min-width:400px;
 }
 
 label{
@@ -444,6 +455,7 @@ label{
 
 textarea{
     min-height:150px;
+    min-width:400px;
     background-color:#1c3749;
     color:white;
 }
@@ -456,13 +468,15 @@ textarea{
     max-width: 600px;
 }
 
-button{
+.submit-button{
     font-size:20px;
     font-weight:bold;
     color:#161540;
     background-color: white;
     margin-top:20px;
-    padding-left:32px;
+    padding:6px;
+    /*padding-left:32px;*/
+    text-align: center;
 }
 
 .which-services{
@@ -472,14 +486,6 @@ button{
 .checkbox{
     font-size:18px;
     margin-bottom: 20px;
-}
-
-.checkbox-container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top:20px;
 }
 
 .social-media-block{
