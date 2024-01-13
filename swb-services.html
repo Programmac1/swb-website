@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <link rel="stylesheet" href="styles/swb-services.css">
     <script src="https://kit.fontawesome.com/20cfc9df53.js" crossorigin="anonymous"></script>
+    <script>
+        const imagesToPreload = [
+            'White-Desk-Photo-Clean-Office-Space-Corporate-Canva-Banner.png',
+            'services-photo.png',
+            'social-manager-office.png',
+            'dream-image.jpeg',
+            'camera-image.jpeg',
+            'facebook-table.webp'
+        ];
+
+        imagesToPreload.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/20cfc9df53.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
