@@ -347,5 +347,18 @@
     .contact-form-container label{
         font-size:1.2rem;
     }
+
+    .background-image-1{
+        background-image: url(white-desk-compressed.png)
+    }
+
+    .background-image-2{
+        background-image: url(services-photo-compressed.png)
+    }
+
+    .background-image-3{
+        background-image: url(social-manager-office-compressed.png)
+    }
+    
 };
 
