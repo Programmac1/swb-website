@@ -25,6 +25,7 @@
     display:flex;
     background-color: rgba(138, 137, 135, 0.1);
     transition: top 1s;
+    padding-right:40px;
 }
 
 .navbar.mobile{
