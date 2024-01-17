@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="styles/swb-contact-page.css">
+    <script src="https://kit.fontawesome.com/20cfc9df53.js" crossorigin="anonymous"></script>
+    <script>
+        const imagesToPreload = [
+            'White-Desk-Photo-Clean-Office-Space-Corporate-Canva-Banner.png',
+            'services-photo.png',
+            'social-manager-office.png',
+            'dream-image.jpeg',
+            'camera-image.jpeg',
+            'facebook-table.webp'
+            'phone-on-table.webp'
+            
+        ];
+
+        imagesToPreload.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+
+    <div class="wrapper">
+
+        <nav class="navbar-wrap">
+            <ul class="navbar">
+                <a class="logo-container" href="index.html"><img class="logo" src="images/sb-logo-two.png"></a>
+                <div class="space-between"></div>
+                <li class="menu-link-wrap"><a class="menu-link" href="index.html">Home</a></li>
+                <li class="menu-link-wrap"><a class="menu-link" href="swb-services.html">Services</a></li>
+                <li class="menu-link-wrap"><a class="menu-link" href="swb-home.html">Contact</a></li>
+                <li class="menu-link-wrap"><a class="menu-link" href="swb-home.html">About</a></li>
+                <a class="insta-logo"><i class="fa-brands fa-instagram"></i></a>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+            </ul>
+        </nav>
+
+        <nav class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="swb-services.html">Services</a>
+            <a href="about-us.html">Contact</a>
+            <a href="#">About Me</a>
+        </nav>
+
+        <div class="background-image-1">
+            <div class="container">
+                <h1 class="service1-header">Contact Me</h1>
+            </div>
+        </div>
+
+        <div class="form-intro">
+            <h1 class="form-intro-text">Fill in the form below</h1>
+            <div class="arrow"><i class="fa-solid fa-angle-down fa-2xl"></i></div>
+        </div>
+
+        <div class="contact-form-container">
+              
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSc9-jq_EkwA9M4ilSXjcxmxIjZcFv3_IUbHLIQ0PXTtcfWb4g/formResponse">
+                <label for="entry.1100124713">Company</label><br>
+                <input class="text-input" type="text" name="entry.1100124713" placeholder="John Smith Enterprises"><br>
+                <label for="entry.996193815">Your Full Name</label><br>
+                <input class="text-input" type="text" name="entry.996193815" placeholder="John Smith"><br>
+
+                <label for="entry.529905989">Email Address</label><br>
+                <input class="text-input" type="text" name="entry.529905989" placeholder="johnsmith@gmail.com"><br>
+                
+
+                <label for="entry.1027610431">Which service(s) are you interested in?</label><br>
+                    <label for="Instagram Audit">Instagram Audit</label><br>
+                    <input type="checkbox" id="entry.1027610431" name="entry.1027610431" value="Instagram Audit" >
+                    <label for="Social Media Management">Social Media Management</label><br>
+                    <input type="checkbox" id="entry.1027610431" name="entry.1027610431" value="Social Media Management" >
+                    <label for="Content Creation Days">Content Creation Days</label><br>
+                    <input type="checkbox" id="entry.1027610431" name="entry.1027610431" value="Content Creation Days" >
+                    
+                <label for="entry.1506748795">Tell me about your goals for your business!</label><br>
+                <textarea name="entry.1506748795" id="entry.1506748795" placeholder="I want to get more clients"></textarea>
+            
+                <button class="submit-button" type="submit">Submit Form</button>
+            </form>
+
+        </div>
+
+
+       
+
+        <div class="social-media-block">
+            <div class="social-media-wrap">
+                <a class="socials"><i class="fa-brands fa-instagram"></i></a>
+                <a class="socials"><i class="fa-brands fa-tiktok"></i></a>
+                <a class="socials"><i class="fa-brands fa-facebook-f"></i></i></a>
+            </div>
+        </div>
+        
+    
+        
+<script src="scripts/swb-home.js"></script>
+
+</body>
+
+</html>

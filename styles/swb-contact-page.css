@@ -67,7 +67,7 @@
 }
 
 .menu-link:hover{
-    color: rgb(218, 213, 213);
+    color: #1c3749;
     cursor: pointer;
 }
 
@@ -183,7 +183,7 @@
 }
 
 .background-image-1{
-    background-image: url(White\ Desk\ Photo\ Clean\ Office\ Space\ Corporate\ Canva\ Banner.png);
+    background-image: url(phone-on-table.webp);
     width:100%;
     height:400px;
     background-attachment: fixed;
@@ -194,59 +194,103 @@
     
 }
 
-.container{
-   position: absolute;
-   top:50%;
-   left:50%;
-   transform: translate(-50%, -50%);
-   background-color: rgb(194, 172, 172, 0.1);
-}
-
 .service1-header{
-    color:white;
-    font-size: 3rem;;
-    font-weight:500;
-}
-
-.service-container{
-    display:flex;
-    height:400px;
-    font-weight:500;
-    font-size:1rem;
-}
-
-/*.service-image{
-    width:50%;
-    background-image: url(White\ Desk\ Photo\ Clean\ Office\ Space\ Corporate\ Canva\ Banner.png);
-    background-size: cover;
-   
-}*/
-
-.service-description{
-    width:100%;
-    color:#161540;
     text-align: center;
+    padding-top: 180px;;
+    font-size: 50px;
+    color:white;
+}
+
+.form-intro{
+    background-color: #1c3749;;
+    height:200px;
+}
+
+.form-intro-text{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    color:white;
+}
+
+.arrow{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top:50px;
+    color: white;
+}
+
+.contact-form-container{
+    /*max-width: 600px;*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
     padding:20px;
+    text-align: center;
+    color:white;
+  
+    background-color: #b5cbda;
+
 }
 
-.background-image-2{
-    background-image: url(services-photo.png);
+form{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    grid-gap: 10px;
     width:100%;
-    height:50%;
-    background-attachment: fixed;
-    /*background-size:100% 100%;*/
-    background-size: cover;
-    padding: 100px 0px;
+    
 }
 
-.background-image-3{
-    background-image: url(social-manager-office.png);
-    width:100%;
-    height:400px;
-    background-attachment: fixed;
-    /*background-size:100% 100%;*/
-    background-size: cover;
-    padding: 100px 0px;
+.text-input{
+    min-width:400px;
+}
+
+label{
+    text-align:center;
+    font-weight: bold;
+    color:#1c3749;
+    font-size:25px;
+    margin-top:20px;
+}
+
+textarea{
+    min-height:150px;
+    min-width:400px;
+    background-color:#1c3749;
+    color:white;
+}
+
+
+
+.company, .full-name, .email{
+    background-color: #6D3918;
+    color:white;
+    max-width: 600px;
+}
+
+.submit-button{
+    font-size:20px;
+    font-weight:bold;
+    color:#161540;
+    background-color: white;
+    margin-top:20px;
+    padding:6px;
+    /*padding-left:32px;*/
+    text-align: center;
+    cursor: pointer;
+}
+
+.which-services{
+    margin-top:20px;
+}
+
+.checkbox{
+    font-size:18px;
+    margin-bottom: 20px;
 }
 
 .social-media-block{
@@ -355,7 +399,7 @@
     }
 
     .background-image-1{
-        background-image: url(dream-image.jpeg);
+        background-image: url(phone-on-table.webp);
         background-attachment:scroll;
     }
 
